@@ -2,7 +2,7 @@ const express = require("express")
 
 const app = express()
 
-app.get("/api/home", (req,res)=>{
+app.get("/", (req,res)=>{
     res.send("Home Page");
 })
 
