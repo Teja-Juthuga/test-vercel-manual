@@ -1,9 +1,10 @@
 const express = require("express")
 
+const products = require("./products.json")
 const app = express()
 
-app.get("/api/home", (req,res)=>{
-    res.send("Home Page");
+app.get("/api/products", (req,res)=>{
+    res.send(products);
 })
 
 app.listen(8081, ()=> {
